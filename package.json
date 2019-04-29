@@ -29,6 +29,6 @@
     "dev": "run-p copy-public start:dev autobuild",
     "start": "sirv dist",
     "start:dev": "sirv dist --dev",
-    "now-build": "run-p copy-public build",
+    "now-build": "run-p copy-public build"
   }
 }

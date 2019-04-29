@@ -1,0 +1,8 @@
+# Built sources
+dist
+
+# NPM Modules
+node_modules
+
+# Other
+.DS_Store

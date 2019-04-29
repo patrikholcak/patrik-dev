@@ -1,0 +1,88 @@
+:root {
+  --siteBg: white;
+  --siteBgDark: #fafafa;
+  --textColor: black;
+  --textColorHover: #4a4a4a;
+  --textColorMuted: darkgray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: "SF Mono", "SFMono-Regular", "Roboto Mono", serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 16px;
+  background: var(--siteBg);
+  color: var(--textColor);
+}
+
+strong {
+  font-family: "SF Mono", "SFMono-Semibold", "Roboto Mono", serif;
+  font-weight: 600;
+}
+
+.particle {
+  animation: particle ease 5s infinite alternate;
+}
+
+@keyframes particle {
+  from {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes light {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes glowFilter {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@media (max-width: 60rem) {
+  html {
+    font-size: 14px;
+  }
+
+  @keyframes particle {
+    from {
+      opacity: 1;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 0.5;
+      transform: translateY(5px);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --siteBg: #33332c;
+    --siteBgDark: #272822;
+    --textColor: wheat;
+    --textColorHover: darkgoldenrod;
+    --textColorMuted: #6e6f67;
+  }
+}

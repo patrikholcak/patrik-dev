@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "portfolio",
-  "builds": [
-    { "src": "package.json", "use": "@now/static-build" }
-  ]
+  "alias": "patrik.dev",
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
 }

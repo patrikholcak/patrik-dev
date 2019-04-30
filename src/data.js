@@ -20,7 +20,7 @@ export const PROJECTS = [
     url: "avocode.com",
     desc:
       "I worked at Avocode for three years, which makes developers’ lifes easier by helping to translate designs into code.",
-    tags: ["React", "Angular", "Photoshop Extension", "Sketch Extension"],
+    tags: ["React", "Angular", "Photoshop Extension", "Sketch Extension", "Website"],
     images: [
       {
         lowres: "/avocode-layer-0.jpg",
@@ -67,7 +67,7 @@ export const PROJECTS = [
     url: "zachranwhiskey.cz",
     desc:
       "I was a part of a team on a pretty cool campaign which ran in 2014 across multiple countries. I was responsible for all animations.",
-    tags: ["Animation", "CSS"],
+    tags: ["Animation", "CSS", "Website"],
     images: [
       {
         lowres: "/jameson-layer-0.jpg",

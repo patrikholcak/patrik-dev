@@ -11,7 +11,8 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-family: "SF Mono", "SFMono-Regular", "Roboto Mono", serif;
+  font-family: "SF Mono", "SFMono-Regular", "Roboto Mono", "Menlo", "Consolas",
+    sans-serif;
   text-decoration: none;
   color: inherit;
 }
@@ -23,7 +24,8 @@ html {
 }
 
 strong {
-  font-family: "SF Mono", "SFMono-Semibold", "Roboto Mono", serif;
+  font-family: "SF Mono", "SFMono-Semibold", "Roboto Mono", "Menlo", "Consolas",
+    sans-serif;
   font-weight: 600;
 }
 

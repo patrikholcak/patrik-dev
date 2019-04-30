@@ -4,6 +4,11 @@
   --textColor: black;
   --textColorHover: #4a4a4a;
   --textColorMuted: darkgray;
+  --fontFamily: "SF Mono", "SFMono-Regular", "Roboto Mono", "Menlo", "Monaco",
+    "Consolas", sans-serif;
+  --fontFamilyBold: "SF Mono", "SFMono-Semibold", "Roboto Mono", "Menlo",
+    "Consolas", sans-serif;
+  --fontFamilySansSerif: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
 }
 
 * {
@@ -11,8 +16,7 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-family: "SF Mono", "SFMono-Regular", "Roboto Mono", "Menlo", "Consolas",
-    sans-serif;
+  font-family: var(--fontFamily);
   text-decoration: none;
   color: inherit;
 }
@@ -24,8 +28,7 @@ html {
 }
 
 strong {
-  font-family: "SF Mono", "SFMono-Semibold", "Roboto Mono", "Menlo", "Consolas",
-    sans-serif;
+  font-family: var(--fontFamilyBold);
   font-weight: 600;
 }
 

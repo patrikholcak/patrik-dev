@@ -29,7 +29,7 @@
   p {
     max-width: 32rem;
     text-align: center;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--fontFamilySansSerif);
     color: var(--textColorMuted);
     line-height: 125%;
   }
@@ -42,7 +42,7 @@
   }
 
   .tag {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--fontFamilySansSerif);
     border: 2px solid currentColor;
     border-radius: 0.4rem;
     line-height: 1.5rem;

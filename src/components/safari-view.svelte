@@ -29,7 +29,7 @@
   }
 
   tspan {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--fontFamilySansSerif);
   }
 
   @media (max-width: 60rem) {
@@ -96,7 +96,6 @@
     <text transform="translate(640 23)">
       <tspan
         fill={colorScheme.text}
-        font-family="Roboto"
         font-size="11"
         font-weight="400"
         text-anchor="middle"

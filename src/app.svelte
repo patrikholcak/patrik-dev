@@ -13,6 +13,10 @@
   $: colorScheme = COLOR_SCHEMES[theme];
 </script>
 
+<style>
+  @import "./src/global.css";
+</style>
+
 <Nav />
 <Hero />
 

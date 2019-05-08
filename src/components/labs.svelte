@@ -37,23 +37,23 @@
     transition: transform 500ms;
   }
 
-  svg.visible {
+  .visible {
     transform: scale(1);
-  }
 
-  .visible path,
-  .visible circle {
-    transition: transform 1500ms 200ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
+    path,
+    circle {
+      transition: transform 1500ms 200ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
 
-  .visible path {
-    transform: translateX(0) scale(1);
-  }
+    path {
+      transform: translateX(0) scale(1);
+    }
 
-  .visible circle {
-    transform: scale(0);
-    transition-duration: 500ms;
-    transition-timing-function: ease;
+    circle {
+      transform: scale(0);
+      transition-duration: 500ms;
+      transition-timing-function: ease;
+    }
   }
 
   g {

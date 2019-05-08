@@ -4,7 +4,6 @@
 </script>
 
 <style>
-
   h1 {
     font-size: 6rem;
     font-weight: 300;
@@ -27,19 +26,19 @@
     border: 2px solid var(--textColorMuted);
     border-radius: 0.8rem;
     transform: translateX(-50%);
-  }
 
-  .scroll-hint:before {
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: 10%;
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 100%;
-    margin-left: -0.25rem;
-    background: var(--textColorMuted);
-    animation: scroll-hintAnimation ease 1.5s infinite;
+    &:before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 10%;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 100%;
+      margin-left: -0.25rem;
+      background: var(--textColorMuted);
+      animation: scroll-hintAnimation ease 1.5s infinite;
+    }
   }
 
   @keyframes scroll-hintAnimation {
@@ -65,23 +64,23 @@
     .scroll-hint {
       height: 2.5rem;
       border-radius: 0.4rem;
-    }
 
-    .scroll-hint:before {
-      top: 20%;
-    }
+      &:before {
+        top: 20%;
+      }
 
-    .scroll-hint:after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      content: "";
-      width: 50%;
-      height: 0.1rem;
-      background: var(--textColorMuted);
-      transform: translateX(-50%);
-      border-bottom-left-radius: 1px;
-      border-bottom-right-radius: 1px;
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        content: "";
+        width: 50%;
+        height: 0.1rem;
+        background: var(--textColorMuted);
+        transform: translateX(-50%);
+        border-bottom-left-radius: 1px;
+        border-bottom-right-radius: 1px;
+      }
     }
   }
 </style>

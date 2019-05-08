@@ -11,7 +11,7 @@
   --fontFamilySansSerif: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
 }
 
-* {
+:global(*) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,18 +21,18 @@
   color: inherit;
 }
 
-html {
+:global(html) {
   font-size: 16px;
   background: var(--siteBg);
   color: var(--textColor);
 }
 
-strong {
+:global(strong) {
   font-family: var(--fontFamilyBold);
   font-weight: 600;
 }
 
-.particle {
+:global(.particle) {
   animation: particle ease 5s infinite alternate;
 }
 
@@ -66,7 +66,7 @@ strong {
 }
 
 @media (max-width: 60rem) {
-  html {
+  :global(html) {
     font-size: 14px;
   }
 

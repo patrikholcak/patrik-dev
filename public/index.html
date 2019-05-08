@@ -1,16 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf8" />
-    <title>patrik.dev</title>
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" />
-  </head>
+  <meta charset="utf8" />
+  <title>${title}</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <body></body>
-  <script>
+  <% styles.forEach(style => { %>
+    <link rel="preload" href="${style}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <% }); %>
+
+  <body>
+
+  <% scripts.forEach(script => { %>
+    <script async defer src="${script}" type="text/javascript"></script>
+  <% }); %>
+
+  <script async defer>
     (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
     h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
     l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)

@@ -16,10 +16,10 @@
 
   a {
     padding: 1.5rem 0.8rem;
-  }
 
-  a:hover {
-    color: var(--textColorHover);
+    &:hover {
+      color: var(--textColorHover);
+    }
   }
 
   .button {
@@ -29,34 +29,36 @@
     height: 4rem;
     border: none;
     background: none;
-  }
 
-  .button:before,
-  .button:after {
-    content: "";
-    position: absolute;
-    width: 2rem;
-    height: 0.15rem;
-    background: var(--textColor);
-    left: 50%;
-    margin-left: -1rem;
-    transition: transform 200ms;
-  }
+    &.expanded {
+      :before {
+        transform: rotate(45deg)
+      }
 
-  .button:before {
-    transform: translateY(-0.25rem)
-  }
+      &:after {
+        transform: rotate(-45deg)
+      }
+    }
 
-  .button.expanded:before {
-    transform: rotate(45deg)
-  }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 2rem;
+      height: 0.15rem;
+      background: var(--textColor);
+      left: 50%;
+      margin-left: -1rem;
+      transition: transform 200ms;
+    }
 
-  .button:after {
-    transform: translateY(0.25rem)
-  }
+    &:before {
+      transform: translateY(-0.25rem)
+    }
 
-  .button.expanded:after {
-    transform: rotate(-45deg)
+    &:after {
+      transform: translateY(0.25rem)
+    }
   }
 
   nav {
@@ -84,13 +86,12 @@
       height: 100vh;
       background: var(--siteBg);
       padding: 0 2rem;
-    }
 
-    nav.expanded {
-      display: flex;
+      &.expanded {
+        display: flex;
+      }
     }
   }
-
 </style>
 
 <div class="nav-wrap">
@@ -105,7 +106,7 @@
       aria-haspopup="true"
       aria-controls="menu"
       aria-label="Navigation"
-      aria-expanded=${expanded}
+      aria-expanded={expanded}
       on:click={() => expanded = !expanded}
     >
     </button>
@@ -115,8 +116,8 @@
       on:click={() => expanded = false}
     >
       <a href="#work">Work</a>
-      <a href="//twitter.com/patrik774" target="_blank">Twitter</a>
-      <a href="//github.com/patrikholcak" target="_blank">Github</a>
+      <a href="//twitter.com/patrik774" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="//github.com/patrikholcak" target="_blank" rel="noopener noreferrer">Github</a>
     </nav>
   </Container>
 </div>

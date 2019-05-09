@@ -23,8 +23,8 @@ export default {
       dir: "dist",
       title: "patrik.dev",
       moreStyles: [
-        "https://fonts.googleapis.com/css?family=Roboto+Mono:400,500",
-        "https://fonts.googleapis.com/css?family=Roboto:400,500",
+        "https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&font-display=swap",
+        "https://fonts.googleapis.com/css?family=Roboto:400,500&font-display=swap",
         "bundle.css"
         // "global.css"
       ],

@@ -112,6 +112,7 @@
     </button>
 
     <nav
+      id="menu"
       class:expanded
       on:click={() => expanded = false}
     >

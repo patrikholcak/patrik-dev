@@ -7,12 +7,12 @@ export const PROJECTS = [
     desc:
       "I co-created one of the most downloaded extensions for Sketch. I was also responsible for the website, backend and the plugin architecture.",
     tags: ["React", "Node.js", "Photoshop Extension", "Sketch Extension"],
-    Children: Craft
+    children: Craft
   },
   {
     title: "InVision LABS",
     desc: "I was a founding member of the team behind LABS.",
-    Children: Labs,
+    children: Labs,
   },
 
   {

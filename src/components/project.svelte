@@ -9,7 +9,9 @@
   export let tags = false;
   export let url = false;
   export let images = false;
-  export let Children = false;
+  export let children = false;
+
+  const Children = children
 </script>
 
 <style>

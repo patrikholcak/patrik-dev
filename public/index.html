@@ -11,13 +11,7 @@
     <noscript><link rel="stylesheet" href="${style}"></noscript>
   <% }); %>
 
-  <script async defer>
-    navigator.userAgent.includes('Firefox') && document.querySelectorAll('link').forEach(link => {
-      link.removeAttribute('onload')
-      link.removeAttribute('onerror')
-      link.rel = 'stylesheet'
-    })
-  </script>
+  <script async defer>navigator.userAgent.includes('Firefox') && document.querySelectorAll('[as=style]').forEach(link => {link.removeAttribute('onload');link.removeAttribute('onerror');link.rel = 'stylesheet'})</script>
 
   <body>
 

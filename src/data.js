@@ -19,7 +19,7 @@ export const PROJECTS = [
     title: "Avocode",
     url: "avocode.com",
     desc:
-      "I worked at Avocode for three years, which makes developers life easier by helping to translate designs into code.",
+      "I worked at Avocode for three years, which makes developer’s life easier by helping to translate designs into code.",
     tags: ["React", "Angular", "Photoshop Extension", "Sketch Extension", "Website"],
     images: [
       {

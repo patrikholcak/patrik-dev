@@ -117,7 +117,7 @@
       on:click={() => expanded = false}
     >
       <a href="#work">Work</a>
-      <a href="//twitter.com/patrik774" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="//twitter.com/patrikholcak" target="_blank" rel="noopener noreferrer">Twitter</a>
       <a href="//github.com/patrikholcak" target="_blank" rel="noopener noreferrer">Github</a>
     </nav>
   </Container>
